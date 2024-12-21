@@ -1,0 +1,78 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Section Styling */
+  .section {
+    border: 1px solid black;
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-size: 1.25rem;
+  }
+  
+  /* Responsive Layout */
+  @media (min-width: 992px) {
+    main {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .section {
+      width: 30%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .section {
+      width: 47%;
+      margin: 1.5%;
+    }
+  
+    #sushi {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .section {
+      width: 100%;
+    }
+  }
+  
