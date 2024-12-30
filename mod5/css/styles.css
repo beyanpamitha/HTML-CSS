@@ -1,0 +1,43 @@
+/* Navbar dropdown background color */
+.navbar-nav li a {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+
+/* Article Tiles Styling */
+.article-tiles .tile {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #6590bc;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Adjust the width as needed (e.g., 50%, 300px, etc.) */
+    max-width: 400px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the tile horizontally */
+}
+
+.article-tiles .tile h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.article-tiles .tile p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #0b0b0b;
+}
+
+/* Button Styling */
+.btn {
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Ensure the dropdown menu takes full width */
+.navbar-collapse {
+    background-color: #f8f9fa;
+}
