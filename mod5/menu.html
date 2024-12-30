@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food, LLC</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food, LLC</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav visible-xs">
+                    <li><a href="#">Chicken</a></li>
+                    <li><a href="#">Beef</a></li>
+                    <li><a href="#">Sushi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <div class="container text-center">
+        <h1>Our Menu</h1>
+    </div>
+
+    <div class="container article-tiles">
+        <div class="row">
+            <!-- Menu Tile -->
+            <div class="col-xs-12 col-sm-4">
+                <div class="tile">
+                    <h2>Breakfast</h2>
+                    <a href="#" onclick="$dc.loadMenuItems('MENU');" class="btn btn-primary">View Menu</a>
+                </div>
+            </div>
+            <!-- Menu Tile -->
+            <div class="col-xs-12 col-sm-4">
+                <div class="tile">
+                    <h2>Lunch</h2>
+                    <a href="#" onclick="$dc.loadMenuItems('MENU');" class="btn btn-primary">View Menu</a>
+                </div>
+            </div>
+            <!-- Menu Tile -->
+            <div class="col-xs-12 col-sm-4">
+                <div class="tile">
+                    <h2>Dinner</h2>
+                    <a href="#" onclick="$dc.loadMenuItems('MENU');" class="btn btn-primary">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </body>

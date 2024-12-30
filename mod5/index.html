@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food, LLC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food, LLC</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav visible-xs">
+                    <li><a href="#">Breakfast</a></li>
+                    <li><a href="#">Lunch</a></li>
+                    <li><a href="#">Dinner</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <div class="container text-center">
+        <h1>Our Menu</h1>
+    </div>
+
+    <!-- Article Tiles Section -->
+    <div class="container article-tiles">
+        <div class="row">
+            <!-- Menu Tile -->
+            <div class="col-xs-12 col-sm-4">
+                <div class="tile">
+                    <h2>Menu</h2>
+                    <a href="#" id="menuButton" class="btn btn-primary">View Menu</a>
+                </div>
+            </div>
+            <script src="script.js"></script>
+            <!-- Specials Tile -->
+            <div class="col-xs-12 col-sm-4">
+                <div class="tile">
+                    <h2>Specials</h2>
+                    <a href="#" id="specials-link" class="btn btn-primary">View Specials</a>
+                </div>
+            </div>
+            <!-- Map Tile -->
+            <div class="col-xs-12 col-sm-4">
+                <div class="tile">
+                    <h2>Map</h2>
+                    <a href="#" onclick="$dc.loadMenuItems('MAP');" class="btn btn-primary">View Map</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Array of available categories
+        const categories = ["CHICKEN", "BEEF", "SUSHI", "LUNCH", "DINNER", "DESSERT"];
+
+        // Function to pick a random category
+        function getRandomCategory() {
+            const randomIndex = Math.floor(Math.random() * categories.length);
+            return categories[randomIndex];
+        }
+
+        // Set the "Specials" tile link to point to a random category
+        const specialsLink = document.getElementById("specials-link");
+        const randomCategory = getRandomCategory();
+        specialsLink.setAttribute("onclick", `$dc.loadMenuItems('${randomCategory}');`);
+        
+  
